@@ -1,0 +1,3 @@
+[submodule "libsoratun"]
+	path = libsoratun
+	url = https://github.com/0x6b/libsoratun
