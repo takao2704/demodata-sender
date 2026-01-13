@@ -6,6 +6,12 @@ AWS Lambda function for generating demo factory telemetry and sending it to the 
 
 Build the shared library on the same architecture as your Lambda. Example for arm64 using the Lambda Python 3.12 base image:
 
+First time only (or after cloning): initialize submodules.
+
+```bash
+git submodule update --init --recursive
+```
+
 ```bash
 docker run --rm --platform linux/arm64 \
   --entrypoint "" -u root \
