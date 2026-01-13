@@ -44,7 +44,7 @@ def _send_with_retry(
 
     for attempt in range(1, max_attempts + 1):
         response_ptr = soratun.Send(config, method, path, body)
-        if response_ptr:
+        if response_ptr is not None:
             return response_ptr.decode("utf-8")
         if attempt < max_attempts:
             sleep_for = backoffs[attempt - 1] + (0.1 * attempt)

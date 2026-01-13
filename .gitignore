@@ -1,0 +1,5 @@
+.env
+arc.json
+lambda.zip
+__pycache__/
+*.pyc
